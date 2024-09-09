@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">Swathi</h1>
+    <h2 class="info">class</h2>
+    <h2 class="info">section</h2>
+    <h2 class="info">group</h2>
+    <h3 id="head">Remove</h3>
+    <h5 id="prompt"></h5>
+    <script> 
+        var n=document.getElementById("name");
+        n.style.background="red";
+        n.innerText="Hello";
+        n.style.fontSize="40px";
+
+        var a=document.getElementsByClassName("info");
+        console.log(a);
+        var para=document.createElement("p");
+        para.innerText="Hi";
+        document.body.appendChild(para);
+
+        var hthree=document.getElementById("head");
+      hthree.parentNode.removeChild(hthree);
+    //    hthree.remove()
+        var input=prompt("enter data");
+        document.getElementById("prompt").textContent=input;
+
+        
+
+    </script>
+</body>
+</html>

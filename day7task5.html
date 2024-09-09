@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function vowels(str){
+        flag=false; 
+       for(i=0;i<=str.length;i++){
+    if(str[i]=="a"||str[i]=="e"||str[i]=="i"||str[i]=="o"||str[i]=="u"){
+        flag=true;
+        break;
+       }
+       }
+if(flag){
+    console.log(str +" "+"it contains vowels");
+}
+else{
+    console.log(str+" "+ "it doesn't contain vowels");
+    
+}
+
+}
+    
+vowels("hi");
+vowels("dry");
+vowels("sky");
+    </script>
+</body>
+</html>

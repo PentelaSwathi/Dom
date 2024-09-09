@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function temperature(temp,scale){
+    if(scale=="C"||scale=="c"){
+       console.log((temp-32)*5/9+" "+"In Celscious");
+       
+    }
+    else{
+        console.log((temp*9/5)+32+" "+"In Fahrehnheit")
+    }
+}
+temperature(30,"C");
+temperature(50,"c");
+temperature(45,"F");
+    </script>
+</body>
+</html>
